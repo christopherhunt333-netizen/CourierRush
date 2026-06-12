@@ -10,6 +10,7 @@ public class TargetSpawner : MonoBehaviour
 
     float minSpawnDistance = 10f;
     float collectDistance = 1f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -64,6 +65,7 @@ public class TargetSpawner : MonoBehaviour
 
         target.transform.position = candidates[Random.Range(0, candidates.Count)];
         target.SetActive(true);
+
     }
 
     // Update is called once per frame
@@ -88,5 +90,6 @@ public class TargetSpawner : MonoBehaviour
         {
             SpawnTarget(false);
         }
+
     }
 }
