@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Package
   - Delivery
+  - Cone
+  - Rock
+  - Spill
   layers:
   - Default
   - TransparentFX

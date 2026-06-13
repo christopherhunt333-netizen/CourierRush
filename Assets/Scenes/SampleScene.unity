@@ -162,7 +162,11 @@ MonoBehaviour:
   - {fileID: 7426504569943110440, guid: 6a8cbf88df74a49d389ef20a1ee0533a, type: 3}
   - {fileID: 7426504569943110440, guid: 23e58906b6e9d42909264c896bd3294e, type: 3}
   - {fileID: 7426504569943110440, guid: 442ebb36893ec4a2a9f7b079e1be6494, type: 3}
-  chunkSize: 10
+  - {fileID: 7426504569943110440, guid: d97a5624a3ea24789ae326b495eb2bb8, type: 3}
+  - {fileID: 7426504569943110440, guid: eccf34204cbf5421ab44f1d0bb59c32d, type: 3}
+  - {fileID: 7426504569943110440, guid: f59aed73fd5cc403eb9acc05918a50d7, type: 3}
+  - {fileID: 7426504569943110440, guid: b8411f949ea3e417e9e3d6a61e981447, type: 3}
+  chunkSize: 9.91
   radius: 2
 --- !u!4 &38785936
 Transform:
@@ -353,6 +357,7 @@ MonoBehaviour:
   audioSource: {fileID: 376851006}
   pickUpClip: {fileID: 8300000, guid: 8a3b65016a3ca0d4e8998e79bb190670, type: 3}
   deliveryClip: {fileID: 8300000, guid: ef970f435307aa742ad13a0b32d69d95, type: 3}
+  bumpClip: {fileID: 8300000, guid: 6f5c22a1c1c25734ea1fac86c4229412, type: 3}
 --- !u!114 &376851001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,7 +1206,7 @@ MonoBehaviour:
   timerText: {fileID: 1975696603}
   gameOverText: {fileID: 1396835289}
   audioSource: {fileID: 1354811972}
-  timer: 30
+  timer: 120
   framesPerSecond: 60
 --- !u!4 &1354811971
 Transform:
@@ -1229,7 +1234,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 832073b23433e4a4d99d84cd023fa9a8, type: 3}
+  m_Resource: {fileID: 8300000, guid: ef970f435307aa742ad13a0b32d69d95, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

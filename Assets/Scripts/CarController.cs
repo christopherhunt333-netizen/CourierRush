@@ -6,6 +6,7 @@ public class CarController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip pickUpClip;
     public AudioClip deliveryClip;
+    public AudioClip bumpClip;
 
     float acceleration = 5f;
     float deceleration = 5f;
@@ -54,11 +55,21 @@ public class CarController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Delivery") || !other.CompareTag("Package"))
+        
+        if (other.CompareTag("Cone"))
         {
-            return;
+            audioSource.PlayOneShot(bumpClip);
         }
 
+        if (other.CompareTag("Rock"))
+        {
+            audioSource.PlayOneShot(bumpClip);
+        }
+
+        if (other.CompareTag("Spill"))
+        {
+            
+        }
 
 
         if (other.CompareTag("Delivery"))
